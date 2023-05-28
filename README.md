@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://www.nachain.org/">
+  <a href="https://www.nachain.org/" target="_blank">
       <img
       src="https://github.com/nachain-dev/nac-logos/raw/main/na-brand-2x.png"
        alt="nachain-logo">
@@ -12,15 +12,15 @@
     Born for decentralized application development.
   <br>
   <br>
-  <a href="https://www.nachain.org/"><strong>Website</strong></a>
+  <a href="https://www.nachain.org/" target="_blank"><strong>Website</strong></a>
   ·
-  <a href="https://scan.nachain.org/">NaScan</a>
+  <a href="https://scan.nachain.org/" target="_blank">NaScan</a>
   ·
-  <a href="https://www.nachain.org/app">NaStation</a>
+  <a href="https://www.nachain.org/app" target="_blank">NaStation</a>
   ·
-  <a href="https://twitter.com/nirvana_chain">Twitter</a>
+  <a href="https://twitter.com/nirvana_chain" target="_blank">Twitter</a>
   ·
-  <a href="https://linktr.ee/NaChainGlobal">Linktr.ee</a>
+  <a href="https://linktr.ee/NaChainGlobal" target="_blank">Linktr.ee</a>
 </p>
 
 ## Overview
@@ -97,8 +97,8 @@ The docs contain helpful information about contributing code to na-chain and usi
 
 #### Quick Links
 
-- [running nastation wallet node](https://github.com/nachain-dev/nastation-sdk-java/blob/main/doc/linux-script.txt)
-- [nastation-sdk](https://github.com/nachain-dev/nastation-sdk-java)
+- [running nastation wallet node](https://github.com/nachain-dev/nastation-sdk-java/blob/main/doc/linux-script.txt){target="_blank"}
+- [nastation-sdk](https://github.com/nachain-dev/nastation-sdk-java){target="_blank"}
 
 
 ## License
