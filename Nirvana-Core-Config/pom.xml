@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>Nirvana-Parent</artifactId>
+        <groupId>nirvana</groupId>
+        <version>1.1-SNAPSHOT</version>
+        <relativePath>../Nirvana-Parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>Nirvana-Core-Config</artifactId>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>nirvana</groupId>
+            <artifactId>Nirvana-Core-Utils</artifactId>
+            <version>1.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>nirvana</groupId>
+            <artifactId>Nirvana-Core-Crypto</artifactId>
+            <version>1.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>nirvana</groupId>
+            <artifactId>Nirvana-Core-Wallet</artifactId>
+            <version>1.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <!--
+        <dependency>
+            <groupId>nirvana</groupId>
+            <artifactId>Nirvana-Network-Netty</artifactId>
+            <version>1.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        -->
+    </dependencies>
+
+
+    <build>
+        <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.2</version>
+                <configuration>
+                    <excludes>
+                        <exclude>config/application-dev.properties</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+
+        </plugins>
+
+    </build>
+
+</project>

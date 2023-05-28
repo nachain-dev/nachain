@@ -1,0 +1,5 @@
+package org.nachain.core.crypto.bip39;
+
+public enum Language {
+    ENGLISH, CHINESE_SIMPLIFIED, CHINESE_TRADITIONAL, CZECH, FRENCH, ITALIAN, JAPANESE, KOREAN, PORTUGUESE, SPANISH
+}

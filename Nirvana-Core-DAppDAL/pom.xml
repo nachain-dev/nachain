@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>Nirvana-Parent</artifactId>
+        <groupId>nirvana</groupId>
+        <version>1.1-SNAPSHOT</version>
+        <relativePath>../Nirvana-Parent/pom.xml</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>Nirvana-Core-DAppDAL</artifactId>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>nirvana</groupId>
+            <artifactId>Nirvana-Core-Persistence</artifactId>
+            <version>1.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>nirvana</groupId>
+            <artifactId>Nirvana-Core-Token</artifactId>
+            <version>1.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>nirvana</groupId>
+            <artifactId>Nirvana-Core-Structure</artifactId>
+            <version>1.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>nirvana</groupId>
+            <artifactId>Nirvana-Core-Npp</artifactId>
+            <version>1.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+
+</project>

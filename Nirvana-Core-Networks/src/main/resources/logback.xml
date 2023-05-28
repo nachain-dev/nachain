@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="false" debug="false">
+
+    <contextName>nirvana-miner</contextName>
+
+    <property name="logFolder" value="logs/nirvana-miner"/>
+    <property name="logFileSize" value="1MB"/>
+
+    <appender name="ConsoleOutputAppender" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder charset="UTF-8">
+            <pattern>%n[%-5level] - [%d{MM-dd-yyyy HH:mm:ss}] - %c.%M\(%c{0}.java:%line\)%n%msg%n</pattern>
+        </encoder>
+        <target>System.out</target>
+    </appender>
+
+    <appender name="ProjectLogFileAppenderAsDebug" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${logFolder}/debug/logback-%d{MM-dd-yyyy}-%i.log</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>${logFileSize}</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>DEBUG</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <encoder charset="UTF-8">
+            <pattern>%n[%-5level] - [%d{MM-dd-yyyy HH:mm:ss}] - %c.%M\(%c{0}.java:%line\)%n%msg%n</pattern>
+            <charset class="java.nio.charset.Charset">UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <appender name="ProjectLogFileAppenderAsInfo" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${logFolder}/info/logback-%d{MM-dd-yyyy}-%i.log</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>${logFileSize}</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <encoder charset="UTF-8">
+            <pattern>%n[%-5level] - [%d{MM-dd-yyyy HH:mm:ss}] - %c.%M\(%c{0}.java:%line\)%n%msg%n</pattern>
+            <charset class="java.nio.charset.Charset">UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <appender name="ProjectLogFileAppenderAsWarn" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${logFolder}/warn/logback-%d{MM-dd-yyyy}-%i.log</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>${logFileSize}</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>WARN</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <encoder charset="UTF-8">
+            <pattern>%n[%-5level] - [%d{MM-dd-yyyy HH:mm:ss}] - %c.%M\(%c{0}.java:%line\)%n%msg%n</pattern>
+            <charset class="java.nio.charset.Charset">UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <appender name="ProjectLogFileAppenderAsError" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <append>true</append>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${logFolder}/error/logback-%d{MM-dd-yyyy}-%i.log</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>${logFileSize}</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <encoder charset="UTF-8">logback.xml
+            <pattern>%n[%-5level] - [%d{MM-dd-yyyy HH:mm:ss}] - %c.%M\(%c{0}.java:%line\)%n%msg%n</pattern>
+            <charset class="java.nio.charset.Charset">UTF-8</charset>
+        </encoder>
+    </appender>
+
+
+    <logger name="io.netty" level="INFO"/>
+    <logger name="org.nachain.libs" level="ERROR"/>
+    <logger name="org.nachain.core.networks.p2p.isc.SenderService" level="INFO"/>
+    <logger name="org.nachain.core.networks.p2p.iserver.AbstractServerBaseAction" level="INFO"/>
+    <logger name="org.nachain.core.networks.p2p.iserver.ServerActionService" level="INFO"/>
+
+    <root level="DEBUG">
+        <appender-ref ref="ConsoleOutputAppender"/>
+        <appender-ref ref="ProjectLogFileAppenderAsDebug"/>
+        <appender-ref ref="ProjectLogFileAppenderAsInfo"/>
+        <appender-ref ref="ProjectLogFileAppenderAsWarn"/>
+        <appender-ref ref="ProjectLogFileAppenderAsError"/>
+    </root>
+
+</configuration>

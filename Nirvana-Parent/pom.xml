@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>nirvana</groupId>
+    <artifactId>Nirvana-Parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.1-SNAPSHOT</version>
+
+    <repositories>
+        <!-- Main Maven repository -->
+        <repository>
+            <id>maven2-central</id>
+            <name>maven2-central</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>bintray-central</id>
+            <name>bintray</name>
+            <url>https://jcenter.bintray.com</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+
+    </repositories>
+
+    <modules>
+        <!--
+        <module>../Nirvana-Miner</module>
+        <module>../Nirvana-Station</module>
+        <module>../Nirvana-DFS</module>
+        <module>../Nirvana-DNS</module>
+        <module>../Nirvana-VM</module>
+        <module>../Nirvana-DataFlow</module>
+        <module>../Nirvana-Obsolete</module>
+        <module>../Nirvana-Core-Nodes</module>
+        -->
+
+        <module>../Nirvana-Version</module>
+        <module>../Nirvana-FTP</module>
+
+        <module>../Nirvana-UtilsLibrary</module>
+        <module>../Nirvana-Natives</module>
+
+        <module>../Nirvana-Core-Crypto</module>
+        <module>../Nirvana-Core-Utils</module>
+        <module>../Nirvana-Core-Persistence</module>
+        <module>../Nirvana-Core-Base</module>
+        <module>../Nirvana-Core-Examiner</module>
+        <module>../Nirvana-Core-Wallet</module>
+        <module>../Nirvana-Core-Config</module>
+        <module>../Nirvana-Core-SignVerify</module>
+        <module>../Nirvana-Core-Networks</module>
+
+        <module>../Nirvana-Core-Mailbox</module>
+        <module>../Nirvana-Core-MailboxDAL</module>
+
+        <module>../Nirvana-Core-Miner</module>
+        <module>../Nirvana-Core-MinerDAL</module>
+
+        <module>../Nirvana-Core-Structure</module>
+        <module>../Nirvana-Core-StructureDAL</module>
+
+        <module>../Nirvana-Core-Chain</module>
+        <module>../Nirvana-Core-ChainDAL</module>
+
+        <module>../Nirvana-Core-Oracle</module>
+        <module>../Nirvana-Core-OracleDAL</module>
+
+        <module>../Nirvana-Core-DApp</module>
+        <module>../Nirvana-Core-DAppDAL</module>
+
+        <module>../Nirvana-Core-Intermediate</module>
+        <module>../Nirvana-Core-IntermediateDAL</module>
+
+        <module>../Nirvana-Core-Token</module>
+        <module>../Nirvana-Core-TokenDAL</module>
+
+        <module>../Nirvana-Core-Transaction</module>
+        <module>../Nirvana-Core-TransactionDAL</module>
+
+        <module>../Nirvana-Core-Das</module>
+        <module>../Nirvana-Core-DasDAL</module>
+
+        <module>../Nirvana-Core-InstanceProfile</module>
+        <module>../Nirvana-Core-InstanceProfileDAL</module>
+
+        <module>../Nirvana-Core-Npp</module>
+        <module>../Nirvana-Core-NppDAL</module>
+        <module>../Nirvana-Core-Subscribe</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <junit.version>4.13.2</junit.version>
+        <slf4j.version>1.7.30</slf4j.version>
+        <lombok.version>1.18.20</lombok.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Logging framework -->
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.36</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>jcl-over-slf4j</artifactId>
+                <version>1.7.36</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>log4j-over-slf4j</artifactId>
+                <version>1.7.36</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>1.2.3</version>
+            </dependency>
+            <!--
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>1.7.36</version>
+            </dependency>
+            -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.20</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

@@ -1,0 +1,10 @@
+NodeName=Target_1
+
+NodeType=calc
+
+AuthPassword=
+
+MaxFrameLength=104857600
+
+# Action Path
+ActionPath=org.nachain.core.networks.chain.client.action
