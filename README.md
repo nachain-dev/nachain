@@ -97,8 +97,8 @@ The docs contain helpful information about contributing code to na-chain and usi
 
 #### Quick Links
 
-- [running nastation wallet node](https://github.com/nachain-dev/nastation-sdk-java/blob/main/doc/linux-script.txt){target="_blank"}
-- [nastation-sdk](https://github.com/nachain-dev/nastation-sdk-java){target="_blank"}
+- [running nastation wallet node](https://github.com/nachain-dev/nastation-sdk-java/blob/main/doc/linux-script.txt)
+- [nastation-sdk](https://github.com/nachain-dev/nastation-sdk-java)
 
 
 ## License
