@@ -39,7 +39,7 @@
         <module>../Nirvana-VM</module>
         <module>../Nirvana-DataFlow</module>
         <module>../Nirvana-Obsolete</module>
-        <module>../Nirvana-Core-Nodes</module>
+
         -->
 
         <module>../Nirvana-Version</module>
@@ -57,6 +57,7 @@
         <module>../Nirvana-Core-Config</module>
         <module>../Nirvana-Core-SignVerify</module>
         <module>../Nirvana-Core-Networks</module>
+        <module>../Nirvana-Core-Nodes</module>
 
         <module>../Nirvana-Core-Mailbox</module>
         <module>../Nirvana-Core-MailboxDAL</module>
